@@ -1,0 +1,19 @@
+-- Table: public.ssfaq
+
+-- DROP TABLE IF EXISTS public.ssfaq;
+
+CREATE TABLE IF NOT EXISTS public.ssfaq
+(
+    id_faq integer NOT NULL DEFAULT nextval('ssfaq_id_faq_seq'::regclass),
+    id_opd integer,
+    pertanyaan character varying(150) COLLATE pg_catalog."default",
+    jawaban character varying(500) COLLATE pg_catalog."default",
+    active integer,
+    tgl_input timestamp without time zone,
+    CONSTRAINT ssfaq_pkey PRIMARY KEY (id_faq)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssfaq
+    OWNER to postgres;

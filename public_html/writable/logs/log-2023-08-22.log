@@ -1,0 +1,85 @@
+CRITICAL - 2023-08-22 11:39:27 --> Call to undefined function App\Controllers\show_404()
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLK')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-22 11:39:31 --> Call to undefined function App\Controllers\show_404()
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-22 11:48:59 --> Undefined variable: data
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 105, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-22 11:49:13 --> Invalid file: errors/cli/alat/error_404.php
+#0 D:\xampp\htdocs\peluit\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/cli/alat...')
+#1 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('errors/cli/alat...', Array, true)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(105): view('errors/cli/alat...')
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-22 11:49:15 --> Invalid file: errors/cli/alat/error_404.php
+#0 D:\xampp\htdocs\peluit\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/cli/alat...')
+#1 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('errors/cli/alat...', Array, true)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(105): view('errors/cli/alat...')
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-08-22 11:49:29 --> Undefined variable: code
+#0 D:\xampp\htdocs\peluit\app\Views\errors\cli\error_404.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 5, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('errors/cli/erro...', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(105): view('errors/cli/erro...')
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-22 11:49:31 --> Undefined variable: code
+#0 D:\xampp\htdocs\peluit\app\Views\errors\cli\error_404.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 5, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('errors/cli/erro...', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(105): view('errors/cli/erro...')
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-22 11:51:51 --> Class 'App\Controllers\Tiket' not found
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-22 11:51:54 --> Class 'App\Controllers\Tiket' not found
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-08-22 11:52:06 --> Undefined variable: users
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-22 11:52:07 --> Undefined variable: users
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 104, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->alat_page('42', 'MULYRWLKWI2W0FO...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

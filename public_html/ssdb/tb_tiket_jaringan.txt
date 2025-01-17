@@ -1,0 +1,25 @@
+-- Table: public.tb_tiket_jaringan
+
+-- DROP TABLE IF EXISTS public.tb_tiket_jaringan;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_jaringan
+(
+    id_pelayanan_jaringan integer NOT NULL DEFAULT nextval('tb_tiket_jaringan_id_pelayanan_jaringan_seq'::regclass),
+    id_tiket integer,
+    tgl_kejadian date,
+    keluhan character varying(500) COLLATE pg_catalog."default",
+    nama_pic character varying(50) COLLATE pg_catalog."default",
+    no_pic character varying(15) COLLATE pg_catalog."default",
+    berkas_pengantar character varying(50) COLLATE pg_catalog."default",
+    tindak_lanjut character varying(500) COLLATE pg_catalog."default",
+    CONSTRAINT tb_tiket_jaringan_pkey PRIMARY KEY (id_pelayanan_jaringan),
+    CONSTRAINT tb_tiket_jaringan_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_jaringan
+    OWNER to postgres;

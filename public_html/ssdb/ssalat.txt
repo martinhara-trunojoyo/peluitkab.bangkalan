@@ -1,0 +1,19 @@
+-- Table: public.ssalat
+
+-- DROP TABLE IF EXISTS public.ssalat;
+
+CREATE TABLE IF NOT EXISTS public.ssalat
+(
+    id_alat integer NOT NULL DEFAULT nextval('ssalat_id_alat_seq'::regclass),
+    nama_alat character varying(255) COLLATE pg_catalog."default",
+    nomor_seri character varying(20) COLLATE pg_catalog."default",
+    active integer,
+    tgl_input timestamp without time zone,
+    merk character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT ssalat_pkey PRIMARY KEY (id_alat)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssalat
+    OWNER to postgres;

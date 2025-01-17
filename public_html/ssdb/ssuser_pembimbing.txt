@@ -1,0 +1,38 @@
+-- Table: public.ssuser_pembimbing
+
+-- DROP TABLE IF EXISTS public.ssuser_pembimbing;
+
+CREATE TABLE
+IF NOT EXISTS public.ssuser_pembimbing
+(
+    id_ssuser_pembimbing integer NOT NULL DEFAULT nextval
+('ssuser_pembimbing_id_ssuser_pembimbing_seq'::regclass),
+    id_ssuser integer NOT NULL,
+    id_sub integer NOT NULL,
+    CONSTRAINT ssuser_pembimbing_pkey PRIMARY KEY
+(id_ssuser_pembimbing),
+    CONSTRAINT ssuser_pembimbing_id_ssuser_fkey FOREIGN KEY
+(id_ssuser)
+        REFERENCES public.ssuser
+(id_ssuser) MATCH SIMPLE
+        ON
+UPDATE NO ACTION
+        ON
+DELETE NO ACTION,
+    CONSTRAINT ssuser_pembimbing_id_sub_fkey
+FOREIGN KEY
+(id_sub)
+        REFERENCES public.sub_bagian
+(id_sub) MATCH SIMPLE
+        ON
+UPDATE NO ACTION
+        ON
+DELETE NO ACTION
+)
+
+TABLESPACE
+pg_default;
+
+ALTER TABLE
+IF EXISTS public.ssuser_pembimbing
+    OWNER to postgres;

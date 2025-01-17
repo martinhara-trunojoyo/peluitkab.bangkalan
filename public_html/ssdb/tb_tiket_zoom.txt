@@ -1,0 +1,30 @@
+-- Table: public.tb_tiket_zoom
+
+-- DROP TABLE IF EXISTS public.tb_tiket_zoom;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_zoom
+(
+    id_pelayanan_zoom integer NOT NULL DEFAULT nextval('tb_tiket_zoom_id_pelayanan_zoom_seq'::regclass),
+    id_tiket integer,
+    nama_acara character varying(150) COLLATE pg_catalog."default",
+    tgl_awal timestamp without time zone,
+    tgl_akhir timestamp without time zone,
+    nama_pic character varying(50) COLLATE pg_catalog."default",
+    no_pic character varying(15) COLLATE pg_catalog."default",
+    berkas_pengantar character varying(50) COLLATE pg_catalog."default",
+    jenis_zoom integer,
+    meeting_id character varying(15) COLLATE pg_catalog."default",
+    passcode character varying(50) COLLATE pg_catalog."default",
+    tempat character varying(50) COLLATE pg_catalog."default",
+    operator integer,
+    CONSTRAINT tb_tiket_zoom_pkey PRIMARY KEY (id_pelayanan_zoom),
+    CONSTRAINT tb_tiket_zoom_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_zoom
+    OWNER to postgres;

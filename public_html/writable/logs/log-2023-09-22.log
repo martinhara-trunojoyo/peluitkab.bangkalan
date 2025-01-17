@@ -1,0 +1,21 @@
+CRITICAL - 2023-09-22 09:11:27 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(456): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 456, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->magang_page('4', 'TVB9OMZ9WF7UCFZ...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-22 09:11:53 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(456): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 456, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->magang_page('4', 'TVB9OMZ9WF7UCFZ...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-22 09:12:01 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(456): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 456, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->magang_page('4', 'TVB9OMZ9WF7UCFZ...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

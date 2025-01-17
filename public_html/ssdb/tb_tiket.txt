@@ -1,0 +1,28 @@
+-- Table: public.tb_tiket
+
+-- DROP TABLE IF EXISTS public.tb_tiket;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket
+(
+    id_tiket integer NOT NULL DEFAULT nextval('tb_tiket_id_tiket_seq'::regclass),
+    kode_tiket character varying COLLATE pg_catalog."default" NOT NULL,
+    tgl_input timestamp without time zone NOT NULL,
+    id_pelayanan integer NOT NULL,
+    id_user integer NOT NULL,
+    status integer NOT NULL,
+    catatan character varying COLLATE pg_catalog."default",
+    CONSTRAINT tb_tiket_pkey PRIMARY KEY (id_tiket),
+    CONSTRAINT tb_tiket_id_pelayanan_fkey FOREIGN KEY (id_pelayanan)
+        REFERENCES public.sspelayanan (id_pelayanan) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT tb_tiket_id_user_fkey FOREIGN KEY (id_user)
+        REFERENCES public.ssuser (id_ssuser) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket
+    OWNER to postgres;

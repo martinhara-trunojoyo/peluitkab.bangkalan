@@ -1,0 +1,430 @@
+ERROR - 2023-09-05 08:49:52 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;nim&quot; does not exist
+LINE 3: WHERE &quot;nim&quot; = '150411100016'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.nip&quot; or the column &quot;ssuser.nik&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(161): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-05 08:49:52 --> pg_query(): Query failed: ERROR:  column &quot;nim&quot; does not exist
+LINE 3: WHERE &quot;nim&quot; = '150411100016'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.nip&quot; or the column &quot;ssuser.nik&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(161): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-05 08:49:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 08:50:34 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;nim&quot; does not exist
+LINE 3: WHERE &quot;nim&quot; = '150411100016'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.nip&quot; or the column &quot;ssuser.nik&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(161): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-05 08:50:34 --> pg_query(): Query failed: ERROR:  column &quot;nim&quot; does not exist
+LINE 3: WHERE &quot;nim&quot; = '150411100016'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.nip&quot; or the column &quot;ssuser.nik&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(161): CodeIgniter\BaseModel->findAll()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-05 08:50:34 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 08:53:49 --> ErrorException: pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:53:49 --> pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:53:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 08:54:57 --> ErrorException: pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:54:57 --> pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:54:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 08:57:44 --> ErrorException: pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:57:44 --> pg_query(): Query failed: ERROR:  value &quot;3526015212960002&quot; is out of range for type integer
+LINE 1: ...AINUR INAS ANNISA', '150411100016', '6155320137', '352601521...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'INSERT INTO "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Auth.php(177): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Auth->register()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-05 08:57:44 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 09:20:10 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:20:10 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:20:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 09:20:14 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:20:14 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:20:14 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 09:23:03 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:03 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 09:23:06 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:06 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-05 09:23:37 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:37 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;ssuser&quot;
+LINE 3: ...IN &quot;sspelayanan&quot; ON &quot;ssuser_magang&quot;.&quot;id_ssuser&quot; = &quot;ssuser&quot;.&quot;...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(719): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pengguna_user_page()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-05 09:23:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

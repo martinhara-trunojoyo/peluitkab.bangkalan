@@ -1,0 +1,42 @@
+CRITICAL - 2023-07-26 11:04:08 --> There is no data to update.
+#0 D:\xampp\htdocs\peluit\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(829): CodeIgniter\Model->update('1', Array)
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->update_sub()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-07-26 11:41:03 --> Undefined variable: title
+#0 D:\xampp\htdocs\peluit\app\Views\admin\landing.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 98, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/landing', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(62): view('admin/landing')
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->landing_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-26 11:52:00 --> Undefined variable: list_pelayanan
+#0 D:\xampp\htdocs\peluit\app\Views\admin\landing.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 50, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/landing', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(65): view('admin/landing', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->landing_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-26 11:52:02 --> Undefined variable: list_pelayanan
+#0 D:\xampp\htdocs\peluit\app\Views\admin\landing.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 50, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/landing', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(65): view('admin/landing', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->landing_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

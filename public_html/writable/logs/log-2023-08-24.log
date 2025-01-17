@@ -1,0 +1,394 @@
+ERROR - 2023-08-24 09:49:58 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:49:58 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:49:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:51:59 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:51:59 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:51:59 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:52:01 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:01 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:01 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:52:02 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:02 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:02 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:52:03 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:03 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:52:04 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:04 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:52:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:54:43 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:54:43 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:54:43 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-24 09:54:46 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character varying(10) in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:54:46 --> pg_query(): Query failed: ERROR:  value too long for type character varying(10)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(321): CodeIgniter\Model->update('40', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_meeting()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-24 09:54:46 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-08-24 10:29:50 --> Undefined index: tgl_akhir
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(217): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 217, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-24 10:30:09 --> Undefined index: nama_acara
+#0 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(217): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 217, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-24 11:25:12 --> count(): Parameter must be an array or an object that implements Countable
+#0 D:\xampp\htdocs\peluit\app\Views\detail\jaringan.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 115, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('detail/jaringan', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(225): view('detail/jaringan', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-24 11:25:26 --> Undefined variable: list
+#0 D:\xampp\htdocs\peluit\app\Views\detail\jaringan.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 115, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('detail/jaringan', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(225): view('detail/jaringan', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-24 11:25:28 --> Undefined variable: list
+#0 D:\xampp\htdocs\peluit\app\Views\detail\jaringan.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 115, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('detail/jaringan', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(225): view('detail/jaringan', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-24 11:33:53 --> Trying to get property 'berkas_foto' of non-object
+#0 D:\xampp\htdocs\peluit\app\Views\detail\jaringan.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 129, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('detail/jaringan', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(225): view('detail/jaringan', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->jaringan_page('39', 'LVRHS12CSUVOF6S...')
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

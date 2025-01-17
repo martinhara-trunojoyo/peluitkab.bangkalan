@@ -1,0 +1,21 @@
+CRITICAL - 2023-07-14 11:01:02 --> Undefined variable: id
+#0 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 260, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->update_list_pelayanan()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-14 11:04:21 --> Undefined variable: id
+#0 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 260, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->update_list_pelayanan()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-14 11:04:42 --> Undefined variable: id
+#0 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(260): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 260, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->update_list_pelayanan()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

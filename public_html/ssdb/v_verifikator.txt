@@ -1,0 +1,14 @@
+ SELECT ssuser.id_ssuser,
+    ssuser.username,
+    ssuser.id_chat,
+    ssuser.active,
+    ssuser.role_id,
+    ssuser.file_foto,
+    ssuser.nama,
+    array_agg(sspelayanan.id_pelayanan) AS id_pelayanan,
+    array_agg(sspelayanan.nama_pelayanan) AS nama_pelayanan
+   FROM verifikator_pelayanan
+     LEFT JOIN ssuser ON ssuser.id_ssuser = verifikator_pelayanan.id_user
+     LEFT JOIN sspelayanan ON sspelayanan.id_pelayanan = verifikator_pelayanan.id_pelayanan
+  WHERE ssuser.role_id = 2
+  GROUP BY ssuser.id_ssuser;

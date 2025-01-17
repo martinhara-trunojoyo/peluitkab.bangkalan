@@ -1,0 +1,5 @@
+CRITICAL - 2023-10-29 22:23:44 --> Class 'App\Filters\Pembimbing' not found
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/pembimbing/das...', 'before')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}

@@ -1,0 +1,28 @@
+-- Table: public.tb_tiket_hosting
+
+-- DROP TABLE IF EXISTS public.tb_tiket_hosting;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_hosting
+(
+    id_pelayanan_hosting integer NOT NULL DEFAULT nextval('tb_tiket_hosting_id_pelayanan_hosting_seq'::regclass),
+    id_tiket integer,
+    nama_aplikasi character varying(100) COLLATE pg_catalog."default",
+    deskripsi character varying(255) COLLATE pg_catalog."default",
+    spesifikasi character varying(255) COLLATE pg_catalog."default",
+    nama_pic character varying(50) COLLATE pg_catalog."default",
+    no_pic character varying(15) COLLATE pg_catalog."default",
+    berkas_pengantar character varying(50) COLLATE pg_catalog."default",
+    port character varying(20) COLLATE pg_catalog."default",
+    db_access character varying(50) COLLATE pg_catalog."default",
+    server_access character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT tb_tiket_hosting_pkey PRIMARY KEY (id_pelayanan_hosting),
+    CONSTRAINT tb_tiket_hosting_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_hosting
+    OWNER to postgres;

@@ -1,0 +1,17 @@
+-- Table: public.ssopd
+
+-- DROP TABLE IF EXISTS public.ssopd;
+
+CREATE TABLE IF NOT EXISTS public.ssopd
+(
+    id_opd integer NOT NULL DEFAULT nextval('ssopd_id_opd_seq'::regclass),
+    nama_opd character varying(125) COLLATE pg_catalog."default",
+    akronim_opd character varying(50) COLLATE pg_catalog."default",
+    foto_opd character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT ssopd_pkey PRIMARY KEY (id_opd)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssopd
+    OWNER to postgres;

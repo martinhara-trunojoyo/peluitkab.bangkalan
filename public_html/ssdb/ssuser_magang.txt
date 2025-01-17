@@ -1,0 +1,40 @@
+-- Table: public.ssuser_magang
+
+-- DROP TABLE IF EXISTS public.ssuser_magang;
+
+CREATE TABLE
+IF NOT EXISTS public.ssuser_magang
+(
+    id_ssuser_magang integer NOT NULL DEFAULT nextval
+('ssuser_magang_id_ssuser_magang_seq'::regclass),
+    id_ssuser integer,
+    gender integer,
+    wa character varying
+(15) COLLATE pg_catalog."default",
+    jenis integer,
+    nomor_induk character varying
+(20) COLLATE pg_catalog."default",
+    jurusan character varying
+(150) COLLATE pg_catalog."default",
+    civitas character varying
+(150) COLLATE pg_catalog."default",
+    ktp character varying
+(50) COLLATE pg_catalog."default",
+    CONSTRAINT ssuser_magang_pkey PRIMARY KEY
+(id_ssuser_magang),
+    CONSTRAINT ssuser_magang_id_ssuser_fkey FOREIGN KEY
+(id_ssuser)
+        REFERENCES public.ssuser
+(id_ssuser) MATCH SIMPLE
+        ON
+UPDATE NO ACTION
+        ON
+DELETE NO ACTION
+)
+
+TABLESPACE
+pg_default;
+
+ALTER TABLE
+IF EXISTS public.ssuser_magang
+    OWNER to postgres;

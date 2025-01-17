@@ -1,0 +1,295 @@
+CRITICAL - 2023-10-24 10:36:36 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::getResult()
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->orders_tiket_harian()
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-10-24 13:26:40 --> Undefined variable: nama
+#0 D:\xampp\htdocs\peluit\app\Views\admin\profile.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 28, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/profile', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(201): view('admin/profile', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-24 13:27:20 --> Undefined variable: count_magang
+#0 D:\xampp\htdocs\peluit\app\Views\admin\profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/profile', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(201): view('admin/profile', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-24 13:27:21 --> Undefined variable: count_magang
+#0 D:\xampp\htdocs\peluit\app\Views\admin\profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/profile', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(201): view('admin/profile', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-10-24 13:27:23 --> Undefined variable: count_magang
+#0 D:\xampp\htdocs\peluit\app\Views\admin\profile.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/profile', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(201): view('admin/profile', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-10-24 13:32:36 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:32:36 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:00 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:00 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:01 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:01 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:01 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:01 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:15 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:15 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:16 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:16 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-24 13:33:16 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-24 13:33:16 --> pg_query(): Query failed: ERROR:  column &quot;id_user&quot; does not exist
+LINE 3: WHERE &quot;id_user&quot; = '1'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;ssuser.id_ssuser&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(196): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->profile_page()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

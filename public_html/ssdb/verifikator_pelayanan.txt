@@ -1,0 +1,24 @@
+-- Table: public.verifikator_pelayanan
+
+-- DROP TABLE IF EXISTS public.verifikator_pelayanan;
+
+CREATE TABLE IF NOT EXISTS public.verifikator_pelayanan
+(
+    id_vpelayanan integer NOT NULL DEFAULT nextval('verifikator_pelayanan_id_vpelayanan_seq'::regclass),
+    id_user integer,
+    id_pelayanan integer,
+    CONSTRAINT verifikator_pelayanan_pkey PRIMARY KEY (id_vpelayanan),
+    CONSTRAINT verifikator_pelayanan_id_pelayanan_fkey FOREIGN KEY (id_pelayanan)
+        REFERENCES public.sspelayanan (id_pelayanan) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT verifikator_pelayanan_id_user_fkey FOREIGN KEY (id_user)
+        REFERENCES public.ssuser (id_ssuser) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.verifikator_pelayanan
+    OWNER to postgres;

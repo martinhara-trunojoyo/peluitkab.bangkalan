@@ -1,0 +1,17 @@
+-- Table: public.ssaula
+
+-- DROP TABLE IF EXISTS public.ssaula;
+
+CREATE TABLE IF NOT EXISTS public.ssaula
+(
+    id_aula integer NOT NULL DEFAULT nextval('ssaula_id_aula_seq'::regclass),
+    nama_aula character varying(75) COLLATE pg_catalog."default",
+    active integer,
+    tgl_input timestamp without time zone,
+    CONSTRAINT ssaula_pkey PRIMARY KEY (id_aula)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssaula
+    OWNER to postgres;

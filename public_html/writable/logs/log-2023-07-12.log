@@ -1,0 +1,8 @@
+CRITICAL - 2023-07-12 21:37:46 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'D:\\xampp\\htdocs...', 460, Array)
+#1 D:\xampp\htdocs\peluit\system\Debug\Toolbar.php(460): file_get_contents('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#3 D:\xampp\htdocs\peluit\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

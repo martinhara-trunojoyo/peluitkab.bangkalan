@@ -1,0 +1,24 @@
+-- Table: public.tb_tiket_subdomain
+
+-- DROP TABLE IF EXISTS public.tb_tiket_subdomain;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_subdomain
+(
+    id_pelayanan_subdomain integer NOT NULL DEFAULT nextval('tb_tiket_subdomain_id_pelayanan_subdomain_seq'::regclass),
+    nama_pic character varying(50) COLLATE pg_catalog."default",
+    no_pic character varying(12) COLLATE pg_catalog."default",
+    berkas_pengantar character varying(50) COLLATE pg_catalog."default",
+    nama_subdomain character varying(70) COLLATE pg_catalog."default",
+    ip_publik character varying(25) COLLATE pg_catalog."default",
+    id_tiket integer,
+    CONSTRAINT tb_tiket_subdomain_pkey PRIMARY KEY (id_pelayanan_subdomain),
+    CONSTRAINT tb_tiket_subdomain_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_subdomain
+    OWNER to postgres;

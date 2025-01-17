@@ -1,0 +1,492 @@
+CRITICAL - 2023-06-15 09:53:54 --> Class 'CodeIgniter\Database\Pdo_Pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('Pdo_Pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:54:26 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:54:28 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:54:30 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:55:33 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:55:35 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:55:36 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:55:37 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:55:37 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:58:09 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:58:10 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:58:11 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:04 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:05 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:06 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:07 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:08 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:50 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:51 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 09:59:52 --> Class 'CodeIgniter\Database\pdo\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pdo', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:04:55 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:04:56 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:04:56 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:04:57 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:14 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:15 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:15 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:15 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:16 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:16 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:16 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:16 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:17 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:17 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:17 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:18 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:05:19 --> Class 'CodeIgniter\Database\postgres\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('postgres', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:53 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:54 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:54 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:55 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:55 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:55 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:55 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:56 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:07:56 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\app\Controllers\Home.php(33): CodeIgniter\Database\Config::connect()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-06-15 10:13:07 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#3 D:\xampp\htdocs\peluit\app\Controllers\Home.php(35): CodeIgniter\Model->__construct()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-15 10:13:09 --> Class 'CodeIgniter\Database\pgsql\Connection' not found
+#0 D:\xampp\htdocs\peluit\system\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('pgsql', 'CodeIgniter\\Dat...', Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Config.php(78): CodeIgniter\Database\Database->load(Array, 'default')
+#2 D:\xampp\htdocs\peluit\system\Model.php(97): CodeIgniter\Database\Config::connect('default')
+#3 D:\xampp\htdocs\peluit\app\Controllers\Home.php(35): CodeIgniter\Model->__construct()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-06-15 10:15:02 --> Array to string conversion
+#0 D:\xampp\htdocs\peluit\app\Controllers\Home.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->pelayanan()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-06-15 10:41:48 --> Argument 2 passed to view() must be of the type array, string given, called in D:\xampp\htdocs\peluit\app\Controllers\Home.php on line 18
+#0 D:\xampp\htdocs\peluit\app\Controllers\Home.php(18): view('homepage', '[{"id_pelayanan...')
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-06-15 11:23:59 --> Undefined variable: id
+#0 D:\xampp\htdocs\peluit\app\Views\homepage.php(165): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 165, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('homepage', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Home.php(18): view('homepage', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-15 15:17:13 --> Undefined variable: tittle
+#0 D:\xampp\htdocs\peluit\app\Views\guest\chart_bar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 53, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('guest/chart_bar', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Home.php(52): view('guest/chart_bar', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->sub_domain()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-15 15:17:25 --> Undefined variable: tittle
+#0 D:\xampp\htdocs\peluit\app\Views\guest\chart_bar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 53, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('guest/chart_bar', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Home.php(52): view('guest/chart_bar', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->sub_domain()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-15 15:17:26 --> Undefined variable: tittle
+#0 D:\xampp\htdocs\peluit\app\Views\guest\chart_bar.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 53, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('guest/chart_bar', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Home.php(52): view('guest/chart_bar', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->sub_domain()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

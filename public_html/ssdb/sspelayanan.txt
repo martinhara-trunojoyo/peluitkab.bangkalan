@@ -1,0 +1,26 @@
+-- Table: public.sspelayanan
+
+-- DROP TABLE IF EXISTS public.sspelayanan;
+
+CREATE TABLE IF NOT EXISTS public.sspelayanan
+(
+    id_pelayanan integer NOT NULL DEFAULT nextval('sspelayanan_id_pelayanan_seq'::regclass),
+    id_opd integer NOT NULL,
+    nama_pelayanan character varying(125) COLLATE pg_catalog."default",
+    route character varying(50) COLLATE pg_catalog."default",
+    url character varying(125) COLLATE pg_catalog."default",
+    file_foto character varying(255) COLLATE pg_catalog."default",
+    active integer,
+    tgl_input timestamp without time zone,
+    deskripsi character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT sspelayanan_pkey PRIMARY KEY (id_pelayanan),
+    CONSTRAINT sspelayanan_id_opd_fkey FOREIGN KEY (id_opd)
+        REFERENCES public.ssopd (id_opd) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.sspelayanan
+    OWNER to postgres;

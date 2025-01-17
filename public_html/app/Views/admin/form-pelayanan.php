@@ -1,0 +1,198 @@
+<?= $this->extend('layout/admin') ?>
+<?= $this->section('content') ?>
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>Form Builder - <?= $pelayanan['nama_pelayanan'] ?></h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="<?= base_url() ?>/admin/dashboard">Dashboard</a></div>
+                <div class="breadcrumb-item"><a href="<?= base_url() ?>/admin/pelayanan">Data Master Pelayanan</a></div>
+                <div class="breadcrumb-item">Form Builder</div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Form Fields</h4>
+                            <div class="card-header-action">
+                                <button class="btn btn-primary" onclick="openAddFieldModal()">
+                                    Add New Field <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Label</th>
+                                            <th>Type</th>
+                                            <th>Required</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="formFieldsList">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="fieldModal" tabindex="-1" role="dialog" aria-labelledby="fieldModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fieldModalLabel">Add Form Field</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="fieldForm">
+                    <input type="hidden" id="id_form" name="id_form">
+                    <input type="hidden" id="id_pelayanan" name="id_pelayanan" value="<?= $pelayanan['id_pelayanan'] ?>">
+                    <div class="form-group">
+                        <label>Field Label</label>
+                        <input type="text" class="form-control" id="label" name="label" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Field Type</label>
+                        <select class="form-control" id="type" name="type" required>
+                            <option value="text">Text</option>
+                            <option value="number">Number</option>
+                            <option value="email">Email</option>
+                            <option value="date">Date</option>
+                            <option value="file">File Upload</option>
+                            <option value="textarea">Text Area</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Required</label>
+                        <select class="form-control" id="required" name="required">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveField()">Save Field</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    loadFormFields();
+});
+
+function loadFormFields() {
+    $.get('<?= base_url() ?>/admin/pelayanan/get_form_fields/<?= $pelayanan['id_pelayanan'] ?>', function(data) {
+        let html = '';
+        data.forEach(function(field) {
+            html += `
+                <tr>
+                    <td>${field.label}</td>
+                    <td>${field.field_type}</td>
+                    <td>${field.required == 1 ? 'Yes' : 'No'}</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" onclick="editField('${field.id}', '${field.label}', '${field.field_type}', '${field.required}')">Edit</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteField(${field.id})">Delete</button>
+                    </td>
+                </tr>
+            `;
+        });
+        $('#formFieldsList').html(html);
+    });
+}
+
+function openAddFieldModal() {
+    $('#fieldForm')[0].reset();
+    $('#id_form').val('');
+    $('#fieldModal').modal('show');
+}
+
+function saveField() {
+    const formData = {
+        id_form: $('#id_form').val(),
+        id_pelayanan: $('#id_pelayanan').val(),
+        label: $('#label').val(),
+        type: $('#type').val(),
+        required: $('#required').val()
+    };
+
+    $.ajax({
+        url: '<?= base_url() ?>/admin/pelayanan/save_form_field',
+        type: 'POST',
+        data: formData,
+        success: function(response) {
+            if(response.status === 200) {
+                $('#fieldModal').modal('hide');
+                loadFormFields();
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: response.message,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        },
+        error: function(xhr, status, error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Failed to save form field'
+            });
+        }
+    });
+}
+
+function deleteField(id) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: '<?= base_url() ?>/admin/pelayanan/delete_form_field/' + id,
+                type: 'DELETE',
+                success: function(response) {
+                    loadFormFields();
+                    Swal.fire(
+                        'Deleted!',
+                        'Field has been deleted.',
+                        'success'
+                    )
+                }
+            });
+        }
+    })
+}
+
+// Update the editField function to handle the new field names
+function editField(id, label, fieldType, required) {
+    $('#id_form').val(id);
+    $('#label').val(label);
+    $('#type').val(fieldType);
+    $('#required').val(required);
+    $('#fieldModal').modal('show');
+}
+</script>
+<?= $this->endSection() ?>

@@ -1,0 +1,225 @@
+ERROR - 2023-09-12 10:50:36 --> ErrorException: pg_query(): Query failed: ERROR:  insert or update on table &quot;log_aktifitas_pelayanan&quot; violates foreign key constraint &quot;log_aktifitas_pelayanan_id_tiket_fkey&quot;
+DETAIL:  Key (id_tiket)=(3) is not present in table &quot;tb_tiket&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'INSERT INTO "lo...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lo...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lo...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lo...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(490): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_catatan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 10:50:36 --> pg_query(): Query failed: ERROR:  insert or update on table &quot;log_aktifitas_pelayanan&quot; violates foreign key constraint &quot;log_aktifitas_pelayanan_id_tiket_fkey&quot;
+DETAIL:  Key (id_tiket)=(3) is not present in table &quot;tb_tiket&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'INSERT INTO "lo...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "lo...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "lo...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO "lo...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Detail.php(490): CodeIgniter\Model->insert(Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Detail->update_catatan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 10:50:36 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-09-12 11:17:13 --> There is no data to update.
+#0 D:\xampp\htdocs\peluit\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(119): CodeIgniter\Model->update('3', Array)
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->update_pembimbing()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-09-12 11:51:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;null&quot;
+LINE 1: ...ATE &quot;tb_tiket_magang&quot; SET &quot;id_pembina_lapangan&quot; = 'null', &quot;n...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(119): CodeIgniter\Model->update('3', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->update_pembimbing()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 11:51:54 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;null&quot;
+LINE 1: ...ATE &quot;tb_tiket_magang&quot; SET &quot;id_pembina_lapangan&quot; = 'null', &quot;n...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(119): CodeIgniter\Model->update('3', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->update_pembimbing()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 11:51:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-12 12:49:05 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 5: AND &quot;ssuser_pembimbing&quot;.&quot;id_sub&quot; = ''
+                                           ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(607): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pembimbing()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-12 12:49:05 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 5: AND &quot;ssuser_pembimbing&quot;.&quot;id_sub&quot; = ''
+                                           ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(607): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pembimbing()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-12 12:49:05 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-12 13:31:49 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;- Pilih Sub Bagian -&quot;
+LINE 5: AND &quot;ssuser_pembimbing&quot;.&quot;id_sub&quot; = '- Pilih Sub Bagian -'
+                                           ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(607): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pembimbing()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-12 13:31:49 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;- Pilih Sub Bagian -&quot;
+LINE 5: AND &quot;ssuser_pembimbing&quot;.&quot;id_sub&quot; = '- Pilih Sub Bagian -'
+                                           ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'SELECT "ssuser"...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "ssuser"...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "ssuser"...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "ssuser"...', Array, false)
+#5 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(607): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->get_pembimbing()
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-12 13:31:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-09-12 13:40:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 1: ...ATE &quot;tb_tiket_magang&quot; SET &quot;id_pembina_lapangan&quot; = '', &quot;nama_...
+                                                             ^ in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(119): CodeIgniter\Model->update('3', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->update_pembimbing()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 13:40:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;&quot;
+LINE 1: ...ATE &quot;tb_tiket_magang&quot; SET &quot;id_pembina_lapangan&quot; = '', &quot;nama_...
+                                                             ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'UPDATE "tb_tike...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "tb_tike...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "tb_tike...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "tb_tike...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 D:\xampp\htdocs\peluit\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(119): CodeIgniter\Model->update('3', Array)
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->update_pembimbing()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-12 13:40:07 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

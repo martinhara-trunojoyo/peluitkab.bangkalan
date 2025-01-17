@@ -1,0 +1,11 @@
+CRITICAL - 2023-07-11 12:56:12 --> Undefined variable: subtitle
+#0 D:\xampp\htdocs\peluit\app\Views\admin\pelayanan.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 137, Array)
+#1 D:\xampp\htdocs\peluit\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('admin/pelayanan', Array, true)
+#4 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(265): view('admin/pelayanan', Array)
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->pelayanan_page()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

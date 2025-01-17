@@ -1,0 +1,28 @@
+-- Table: public.log_aktifitas_pelayanan
+
+-- DROP TABLE IF EXISTS public.log_aktifitas_pelayanan;
+
+CREATE TABLE IF NOT EXISTS public.log_aktifitas_pelayanan
+(
+    id_log integer NOT NULL DEFAULT nextval('"log_aktifitas_pelayanan_id_log _seq"'::regclass),
+    id_user integer,
+    tgl_aktifitas timestamp without time zone,
+    aktifitas character varying(255) COLLATE pg_catalog."default",
+    color character varying(50) COLLATE pg_catalog."default",
+    id_tiket integer,
+    icon character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT log_aktifitas_pelayanan_pkey PRIMARY KEY (id_log),
+    CONSTRAINT log_aktifitas_pelayanan_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT log_aktifitas_pelayanan_id_user_fkey FOREIGN KEY (id_user)
+        REFERENCES public.ssuser (id_ssuser) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.log_aktifitas_pelayanan
+    OWNER to postgres;

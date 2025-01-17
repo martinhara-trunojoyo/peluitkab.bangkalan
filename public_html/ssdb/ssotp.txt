@@ -1,0 +1,18 @@
+-- Table: public.ssotp
+
+-- DROP TABLE IF EXISTS public.ssotp;
+
+CREATE TABLE IF NOT EXISTS public.ssotp
+(
+    id_otp integer NOT NULL DEFAULT nextval('ssotp_id_otp_seq'::regclass),
+    id_ssuser integer,
+    kode_otp character(6) COLLATE pg_catalog."default",
+    exp_date timestamp without time zone,
+    active integer,
+    CONSTRAINT ssotp_pkey PRIMARY KEY (id_otp)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssotp
+    OWNER to postgres;

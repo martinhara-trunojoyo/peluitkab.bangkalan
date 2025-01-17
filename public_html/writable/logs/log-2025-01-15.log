@@ -1,0 +1,380 @@
+ERROR - 2025-01-15 20:42:36 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:42:36 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:44:15 --> Error connecting to the database: ctype_digit(): Argument of type int will be interpreted as string in the future
+CRITICAL - 2025-01-15 20:44:15 --> Unable to connect to the database.
+Main connection [Postgre]: ctype_digit(): Argument of type int will be interpreted as string in the future
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-01-15 20:44:15 --> Uncaught ErrorException: strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\laragon\www\peluit2025\public_html\system\Validation\FormatRules.php:253
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtolower(): P...', 'C:\\laragon\\www\\...', 253)
+#1 C:\laragon\www\peluit2025\public_html\system\Validation\FormatRules.php(253): strtolower(NULL)
+#2 C:\laragon\www\peluit2025\public_html\system\HTTP\RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip('127.0.0.1')
+#3 C:\laragon\www\peluit2025\public_html\app\Views\errors\html\error_exception.php(206): CodeIgniter\HTTP\Request->getIPAddress()
+#4 C:\laragon\www\peluit2025\public_html\system\Debug\Exceptions.php(229): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\peluit2025\public_html\system\Debug\Exceptions.php(232): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#6 C:\laragon\www\peluit2025\public_html\system\Debug\Exceptions.php(116): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#8 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-15 20:44:29 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:44:29 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:44:30 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:44:30 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:44:32 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:44:32 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:44:32 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:44:32 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:44:32 --> Error connecting to the database: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+CRITICAL - 2025-01-15 20:44:32 --> Unable to connect to the database.
+Main connection [Postgre]: Call to undefined function CodeIgniter\Database\Postgre\pg_connect()
+#0 C:\laragon\www\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\laragon\www\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\laragon\www\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\laragon\www\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\laragon\www\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 20:48:17 --> Error connecting to the database: ctype_digit(): Argument of type int will be interpreted as string in the future
+CRITICAL - 2025-01-15 20:48:17 --> Unable to connect to the database.
+Main connection [Postgre]: ctype_digit(): Argument of type int will be interpreted as string in the future
+#0 C:\xampp2\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp2\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp2\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp2\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp2\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp2\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp2\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp2\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-01-15 20:48:17 --> Uncaught ErrorException: strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp2\htdocs\peluit2025\public_html\system\Validation\FormatRules.php:253
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtolower(): P...', 'C:\\xampp2\\htdoc...', 253)
+#1 C:\xampp2\htdocs\peluit2025\public_html\system\Validation\FormatRules.php(253): strtolower(NULL)
+#2 C:\xampp2\htdocs\peluit2025\public_html\system\HTTP\RequestTrait.php(151): CodeIgniter\Validation\FormatRules->valid_ip('::1')
+#3 C:\xampp2\htdocs\peluit2025\public_html\app\Views\errors\html\error_exception.php(206): CodeIgniter\HTTP\Request->getIPAddress()
+#4 C:\xampp2\htdocs\peluit2025\public_html\system\Debug\Exceptions.php(229): include('C:\\xampp2\\htdoc...')
+#5 C:\xampp2\htdocs\peluit2025\public_html\system\Debug\Exceptions.php(232): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#6 C:\xampp2\htdocs\peluit2025\public_html\system\Debug\Exceptions.php(116): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Database\Exceptions\DatabaseException), 500)
+#7 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#8 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-15 21:31:33 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:31:33 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:09 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:09 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:13 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:13 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:13 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:13 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:13 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:13 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:14 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:14 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:14 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:14 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:37:14 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+CRITICAL - 2025-01-15 21:37:14 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: SCRAM authentication requires libpq version 10 or above
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 21:43:22 --> Error connecting to the database: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  password authentication failed for user &quot;postgres&quot;
+CRITICAL - 2025-01-15 21:43:22 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  password authentication failed for user &quot;postgres&quot;
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Home.php(25): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-15 22:21:57 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('hosting')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:21:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('sub-domain')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:22:05 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('sertifikat-tte')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:22:10 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('hosting')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:22:17 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('emailopd')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:40:17 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('sub-domain')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-15 22:40:41 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;form_components&quot; does not exist
+LINE 2: FROM &quot;form_components&quot;
+             ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\FormBuilder.php(21): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\FormBuilder->getComponents('sub-domain')
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormBuilder))
+#8 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -1,0 +1,6 @@
+CRITICAL - 2023-08-10 11:07:40 --> Call to a member function guessExtension() on null
+#0 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Form->add_hosting()
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

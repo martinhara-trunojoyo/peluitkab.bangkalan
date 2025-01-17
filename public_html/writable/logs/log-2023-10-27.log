@@ -1,0 +1,27 @@
+CRITICAL - 2023-10-27 13:29:22 --> Invalid file: verifikator/dashboard.php
+#0 D:\xampp\htdocs\peluit\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('verifikator/das...')
+#1 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('verifikator/das...', Array, true)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(57): view('verifikator/das...', Array)
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->index()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-10-27 13:29:26 --> Invalid file: verifikator/dashboard.php
+#0 D:\xampp\htdocs\peluit\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('verifikator/das...')
+#1 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('verifikator/das...', Array, true)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(57): view('verifikator/das...', Array)
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->index()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-10-27 13:30:37 --> Invalid file: verifikator/dashboard.php
+#0 D:\xampp\htdocs\peluit\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('verifikator/das...')
+#1 D:\xampp\htdocs\peluit\system\Common.php(1097): CodeIgniter\View\View->render('verifikator/das...', Array, true)
+#2 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(57): view('verifikator/das...', Array)
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->index()
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

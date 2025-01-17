@@ -1,0 +1,160 @@
+CRITICAL - 2023-09-14 10:16:02 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 224, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(224): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:28:50 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:28:52 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:28:54 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:01 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:02 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:03 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:04 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:35 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:30:36 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 250, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(250): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:39:37 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:41:21 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:41:22 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:49:31 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:51:43 --> imagecreatefrompng() expects parameter 1 to be a valid path, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefrompng('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:51:50 --> imagecreatefrompng() expects parameter 1 to be a valid path, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefrompng('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:53:01 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 222, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(222): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:53:03 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 222, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(222): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:53:19 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-14 10:53:20 --> imagecreatefromstring(): gd-png: libpng warning: iCCP: known incorrect sRGB profile
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'imagecreatefrom...', 'D:\\xampp\\htdocs...', 256, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Magang.php(256): imagecreatefromstring('\x89PNG\r\n\x1A\n\x00\x00\x00\rIHD...')
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Magang->generate_qrcode()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Magang))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

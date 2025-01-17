@@ -1,0 +1,155 @@
+CRITICAL - 2023-10-25 13:53:45 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:49 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:51 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:52 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:52 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:52 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-10-25 13:53:54 --> count(): Parameter must be an array or an object that implements Countable
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'D:\\xampp\\htdocs...', 373, Array)
+#1 D:\xampp\htdocs\peluit\app\Controllers\Home.php(373): count(NULL)
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-10-25 14:26:42 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_ssuser&quot; does not exist
+LINE 3: WHERE &quot;id_ssuser&quot; = '14'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;tb_tiket_magang.id_user&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Home.php(393): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 14:26:42 --> pg_query(): Query failed: ERROR:  column &quot;id_ssuser&quot; does not exist
+LINE 3: WHERE &quot;id_ssuser&quot; = '14'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;tb_tiket_magang.id_user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Home.php(393): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 14:26:42 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-10-25 14:27:33 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;id_ssuser&quot; does not exist
+LINE 3: WHERE &quot;id_ssuser&quot; = '14'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;tb_tiket_magang.id_user&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Home.php(393): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 14:27:33 --> pg_query(): Query failed: ERROR:  column &quot;id_ssuser&quot; does not exist
+LINE 3: WHERE &quot;id_ssuser&quot; = '14'
+              ^
+HINT:  Perhaps you meant to reference the column &quot;tb_tiket_magang.id_user&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #121, 'SELECT *\nFROM "...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 D:\xampp\htdocs\peluit\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#7 D:\xampp\htdocs\peluit\app\Controllers\Home.php(393): CodeIgniter\BaseModel->first()
+#8 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-25 14:27:33 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2023-10-25 14:40:32 --> Undefined index: id_pembina_lapangan
+#0 D:\xampp\htdocs\peluit\app\Controllers\Home.php(401): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 401, Array)
+#1 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Home->orders_get_magang_id()
+#2 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,30 @@
+-- Table: public.tb_tiket_aula
+
+-- DROP TABLE IF EXISTS public.tb_tiket_aula;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_aula
+(
+    id_pelayanan_aula integer NOT NULL DEFAULT nextval('tb_tiket_aula_id_pelayanan_aula_seq'::regclass),
+    id_tiket integer,
+    nama_acara character varying(50) COLLATE pg_catalog."default",
+    tgl_awal timestamp without time zone,
+    id_aula integer,
+    nama_pic character varying(50) COLLATE pg_catalog."default",
+    no_pic character varying(15) COLLATE pg_catalog."default",
+    berkas_pengantar character varying(50) COLLATE pg_catalog."default",
+    tgl_akhir timestamp without time zone,
+    CONSTRAINT tb_tiket_aula_pkey PRIMARY KEY (id_pelayanan_aula),
+    CONSTRAINT tb_tiket_aula_id_aula_fkey FOREIGN KEY (id_aula)
+        REFERENCES public.ssaula (id_aula) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT tb_tiket_aula_id_tiket_fkey FOREIGN KEY (id_tiket)
+        REFERENCES public.tb_tiket (id_tiket) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_aula
+    OWNER to postgres;

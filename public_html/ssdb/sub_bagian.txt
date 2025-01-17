@@ -1,0 +1,18 @@
+-- Table: public.sub_bagian
+
+-- DROP TABLE IF EXISTS public.sub_bagian;
+
+CREATE TABLE IF NOT EXISTS public.sub_bagian
+(
+    id_sub integer NOT NULL DEFAULT nextval('sub_bagian_id_sub_seq'::regclass),
+    id_opd integer,
+    nama_sub character varying(255) COLLATE pg_catalog."default",
+    tgl_input timestamp without time zone,
+    active integer,
+    CONSTRAINT sub_bagian_pkey PRIMARY KEY (id_sub)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.sub_bagian
+    OWNER to postgres;

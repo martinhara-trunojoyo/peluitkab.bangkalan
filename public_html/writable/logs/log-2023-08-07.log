@@ -1,0 +1,176 @@
+ERROR - 2023-08-07 11:57:51 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:57:51 --> pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:57:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-07 11:58:06 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:58:06 --> pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:58:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-07 11:59:47 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:59:47 --> pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:59:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-08-07 11:59:56 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;. in D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:59:56 --> pg_query(): Query failed: ERROR:  update or delete on table &quot;sspelayanan&quot; violates foreign key constraint &quot;verifikator_pelayanan_id_pelayanan_fkey&quot; on table &quot;verifikator_pelayanan&quot;
+DETAIL:  Key (id_pelayanan)=(3) is still referenced from table &quot;verifikator_pelayanan&quot;.
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'D:\\xampp\\htdocs...', 136, Array)
+#1 D:\xampp\htdocs\peluit\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'DELETE FROM "ss...')
+#2 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('DELETE FROM "ss...')
+#3 D:\xampp\htdocs\peluit\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM "ss...')
+#4 D:\xampp\htdocs\peluit\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM "ss...', Array, false)
+#5 D:\xampp\htdocs\peluit\system\Database\Postgre\Builder.php(204): CodeIgniter\Database\BaseBuilder->delete('', NULL, true)
+#6 D:\xampp\htdocs\peluit\system\Model.php(359): CodeIgniter\Database\Postgre\Builder->delete()
+#7 D:\xampp\htdocs\peluit\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#8 D:\xampp\htdocs\peluit\app\Controllers\Admin.php(493): CodeIgniter\BaseModel->delete()
+#9 D:\xampp\htdocs\peluit\system\CodeIgniter.php(824): App\Controllers\Admin->del_pelayanan()
+#10 D:\xampp\htdocs\peluit\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 D:\xampp\htdocs\peluit\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-07 11:59:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 D:\xampp\htdocs\peluit\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 D:\xampp\htdocs\peluit\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 D:\xampp\htdocs\peluit\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

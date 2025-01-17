@@ -1,0 +1,10 @@
+CRITICAL - 2024-02-06 23:15:02 --> unlink(D:\xampp\htdocs\peluit\writable\debugbar/debugbar_1707281508.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(D:\\xampp...', 'D:\\xampp\\htdocs...', 74, Array)
+#1 D:\xampp\htdocs\peluit\system\Debug\Toolbar\Collectors\History.php(74): unlink('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\peluit\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1707282900, 20)
+#3 D:\xampp\htdocs\peluit\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 D:\xampp\htdocs\peluit\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 D:\xampp\htdocs\peluit\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 D:\xampp\htdocs\peluit\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\xampp\htdocs\peluit\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

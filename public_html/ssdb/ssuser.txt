@@ -1,0 +1,29 @@
+-- Table: public.ssuser
+
+-- DROP TABLE IF EXISTS public.ssuser;
+
+CREATE TABLE IF NOT EXISTS public.ssuser
+(
+    id_ssuser integer NOT NULL DEFAULT nextval('ssuser_id_ssuser_seq'::regclass),
+    username character varying(20) COLLATE pg_catalog."default" NOT NULL,
+    nip character varying(20) COLLATE pg_catalog."default",
+    nik character varying(20) COLLATE pg_catalog."default",
+    id_chat bigint,
+    active integer,
+    role_id integer,
+    file_foto character(150) COLLATE pg_catalog."default",
+    id_opd integer,
+    tgl_input timestamp without time zone,
+    tgl_validasi timestamp without time zone,
+    nama character(100) COLLATE pg_catalog."default",
+    CONSTRAINT ssuser_pkey PRIMARY KEY (id_ssuser),
+    CONSTRAINT id_opd FOREIGN KEY (id_opd)
+        REFERENCES public.ssopd (id_opd) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.ssuser
+    OWNER to postgres;

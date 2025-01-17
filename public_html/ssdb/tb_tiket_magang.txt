@@ -1,0 +1,30 @@
+-- Table: public.tb_tiket_magang
+
+-- DROP TABLE IF EXISTS public.tb_tiket_magang;
+
+CREATE TABLE IF NOT EXISTS public.tb_tiket_magang
+(
+    id_tiket integer NOT NULL DEFAULT nextval('tb_tiket_magang_id_tiket_seq'::regclass),
+    kode_tiket character varying(20) COLLATE pg_catalog."default",
+    tgl_input timestamp without time zone,
+    status integer,
+    catatan character varying(150) COLLATE pg_catalog."default",
+    id_opd integer,
+    tgl_awal date,
+    tgl_akhir date,
+    nama_pembimbing character varying(50) COLLATE pg_catalog."default",
+    no_pembimbing character varying(15) COLLATE pg_catalog."default",
+    surat_pengantar character varying(50) COLLATE pg_catalog."default",
+    id_user integer,
+    nama_project character varying(150) COLLATE pg_catalog."default",
+    deskripsi_project character varying(150) COLLATE pg_catalog."default",
+    berkas_project character varying(50) COLLATE pg_catalog."default",
+    tgl_selesai timestamp without time zone,
+    id_pembina_lapangan integer,
+    CONSTRAINT tb_tiket_magang_pkey PRIMARY KEY (id_tiket)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.tb_tiket_magang
+    OWNER to postgres;
