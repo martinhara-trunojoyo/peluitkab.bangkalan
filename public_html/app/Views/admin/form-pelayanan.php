@@ -18,6 +18,9 @@
                         <div class="card-header">
                             <h4>Form Fields</h4>
                             <div class="card-header-action">
+                                <a href="<?= base_url() ?>/admin/tiket/view_form/<?= $pelayanan['id_pelayanan'] ?>" class="btn btn-info mr-2">
+                                    View Form <i class="fas fa-eye"></i>
+                                </a>
                                 <button class="btn btn-primary" onclick="openAddFieldModal()">
                                     Add New Field <i class="fas fa-plus"></i>
                                 </button>
@@ -73,6 +76,7 @@
                             <option value="date">Date</option>
                             <option value="file">File Upload</option>
                             <option value="textarea">Text Area</option>
+                            <option value="select">Select</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -100,14 +104,14 @@ $(document).ready(function() {
 function loadFormFields() {
     $.get('<?= base_url() ?>/admin/pelayanan/get_form_fields/<?= $pelayanan['id_pelayanan'] ?>', function(data) {
         let html = '';
-        data.forEach(function(field) {
+        data.forEach(function(field, index) {
             html += `
                 <tr>
                     <td>${field.label}</td>
                     <td>${field.field_type}</td>
                     <td>${field.required == 1 ? 'Yes' : 'No'}</td>
                     <td>
-                        <button class="btn btn-warning btn-sm" onclick="editField('${field.id}', '${field.label}', '${field.field_type}', '${field.required}')">Edit</button>
+                        <button class="btn btn-warning btn-sm" onclick="editField(${field.id}, '${field.label}', '${field.field_type}', '${field.required}')">Edit</button>
                         <button class="btn btn-danger btn-sm" onclick="deleteField(${field.id})">Delete</button>
                     </td>
                 </tr>
@@ -129,7 +133,8 @@ function saveField() {
         id_pelayanan: $('#id_pelayanan').val(),
         label: $('#label').val(),
         type: $('#type').val(),
-        required: $('#required').val()
+        required: $('#required').val(),
+        sort_order: $('#formFieldsList tr').length + 1
     };
 
     $.ajax({

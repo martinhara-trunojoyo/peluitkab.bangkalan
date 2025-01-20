@@ -1043,19 +1043,27 @@ class Admin extends BaseController
             'id_pelayanan' => $this->request->getPost('id_pelayanan'),
             'label' => $this->request->getPost('label'),
             'field_type' => $this->request->getPost('type'), // Note: form sends 'type' but we store as 'field_type'
-            'required' => $this->request->getPost('required')
+            'required' => $this->request->getPost('required'),
+            'sort_order' => (int)$this->request->getPost('sort_order', 0)
         ];
         
-        if ($this->request->getPost('id_form')) {
-            $formFieldModel->update($this->request->getPost('id_form'), $data);
-        } else {
-            $formFieldModel->insert($data);
+        try {
+            if ($this->request->getPost('id_form')) {
+                $formFieldModel->update($this->request->getPost('id_form'), $data);
+            } else {
+                $formFieldModel->insert($data);
+            }
+            
+            return $this->response->setJSON([
+                'status' => 200,
+                'message' => 'Form field saved successfully'
+            ]);
+        } catch (\Exception $e) {
+            return $this->response->setJSON([
+                'status' => 500,
+                'message' => 'Error saving form field: ' . $e->getMessage()
+            ]);
         }
-        
-        return $this->response->setJSON([
-            'status' => 200,
-            'message' => 'Form field saved successfully'
-        ]);
     }
 
     public function delete_form_field($id) {
@@ -1066,6 +1074,20 @@ class Admin extends BaseController
             'status' => 200,
             'message' => 'Form field deleted successfully'
         ]);
+    }
+
+    public function viewGeneratedForm($id_pelayanan)
+    {
+        $pelayananModel = new Pelayanan();
+        $formFieldModel = new \App\Models\FormField();
+        
+        $data = [
+            'title' => 'Generated Form',
+            'pelayanan' => $pelayananModel->find($id_pelayanan),
+            'form_fields' => $formFieldModel->getFieldsByPelayanan($id_pelayanan)
+        ];
+        
+        return view('form_tiket/generate-form', $data);
     }
 
     // -----------------------------------------------------------------------------------------------------------------------

@@ -106,6 +106,8 @@ $routes->group('admin', ['filter' => 'adminAuth'], static function ($routes) {
 
     $routes->post('set_zoom', 'Form::add_zoom');
     $routes->post('get_zoom', 'Form::add_zoom_calendar');
+
+    $routes->get('view_form/(:num)', 'Admin::viewGeneratedForm/$1');
   });
 
   $routes->group('landing-page', static function ($routes) {

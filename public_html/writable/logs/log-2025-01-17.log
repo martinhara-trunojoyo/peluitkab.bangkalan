@@ -1,0 +1,347 @@
+CRITICAL - 2025-01-17 08:58:02 --> Undefined variable: formFields
+#0 C:\xampp5\htdocs\peluit2025\public_html\app\Views\admin\tiket.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp5\\htdoc...', 115, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\View\View.php(214): include('C:\\xampp5\\htdoc...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Common.php(1097): CodeIgniter\View\View->render('admin/tiket', Array, true)
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(176): view('admin/tiket', Array)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->tiket_page()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-01-17 09:01:37 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'sub-domain'
+              ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('sub-domain')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('sub-domain')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:01:37 --> pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'sub-domain'
+              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('sub-domain')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('sub-domain')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:02:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'hosting'
+              ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('hosting')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('hosting')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:02:21 --> pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'hosting'
+              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('hosting')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('hosting')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:09:03 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'hosting'
+              ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #133, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('hosting')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('hosting')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:09:03 --> pg_query(): Query failed: ERROR:  column &quot;route&quot; does not exist
+LINE 3: WHERE &quot;route&quot; = 'hosting'
+              ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #133, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Form.php(1076): App\Models\FormField->getFieldsByRoute('hosting')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Form->index('hosting')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Form))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:46:09 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:46:09 --> pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:46:19 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:46:19 --> pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:46:53 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type boolean: &quot;&quot;
+LINE 1: ... = 'Nama Subdomainn', &quot;field_type&quot; = 'text', &quot;required&quot; = ''
+                                                                     ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'UPDATE "form_fi...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "form_fi...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "form_fi...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "form_fi...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1050): CodeIgniter\Model->update('11', Array)
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->save_form_field()
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:46:53 --> pg_query(): Query failed: ERROR:  invalid input syntax for type boolean: &quot;&quot;
+LINE 1: ... = 'Nama Subdomainn', &quot;field_type&quot; = 'text', &quot;required&quot; = ''
+                                                                     ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #131, 'UPDATE "form_fi...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "form_fi...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "form_fi...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1901): CodeIgniter\Database\BaseConnection->query('UPDATE "form_fi...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(646): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1050): CodeIgniter\Model->update('11', Array)
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->save_form_field()
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:46:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Type is not supported". in C:\xampp5\htdocs\peluit2025\public_html\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\xampp5\htdocs\peluit2025\public_html\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2025-01-17 09:49:15 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:49:15 --> pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(17): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:50:10 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(33): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:50:10 --> pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(33): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2025-01-17 09:50:39 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^ in C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(33): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 09:50:39 --> pg_query(): Query failed: ERROR:  column &quot;sort_order&quot; does not exist
+LINE 4: ORDER BY &quot;sort_order&quot; ASC
+                 ^
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #132, 'SELECT *\nFROM "...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp5\htdocs\peluit2025\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp5\htdocs\peluit2025\public_html\app\Models\FormField.php(33): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp5\htdocs\peluit2025\public_html\app\Controllers\Admin.php(1079): App\Models\FormField->getFieldsByPelayanan('5')
+#9 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(824): App\Controllers\Admin->viewGeneratedForm('5')
+#10 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-01-17 18:15:55 --> unlink(C:\xampp5\htdocs\peluit2025\public_html\writable\debugbar/debugbar_1737083910.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp...', 'C:\\xampp5\\htdoc...', 74, Array)
+#1 C:\xampp5\htdocs\peluit2025\public_html\system\Debug\Toolbar\Collectors\History.php(74): unlink('C:\\xampp5\\htdoc...')
+#2 C:\xampp5\htdocs\peluit2025\public_html\system\Debug\Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1737159353, 20)
+#3 C:\xampp5\htdocs\peluit2025\public_html\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp5\htdocs\peluit2025\public_html\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp5\htdocs\peluit2025\public_html\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp5\htdocs\peluit2025\public_html\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp5\htdocs\peluit2025\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
