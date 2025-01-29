@@ -19,56 +19,62 @@
                             <h4>Form Preview</h4>
                         </div>
                         <div class="card-body">
-                            <form id="generatedForm" method="POST" enctype="multipart/form-data">
-                                <?php foreach ($form_fields as $field): ?>
-                                    <div class="form-group">
-                                        <label><?= $field['label'] ?><?= $field['required'] ? ' <span class="text-danger">*</span>' : '' ?></label>
-                                        
-                                        <?php switch($field['field_type']): 
-                                            case 'text': ?>
-                                                <input type="text" class="form-control" name="field_<?= $field['id'] ?>" 
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'number': ?>
-                                                <input type="number" class="form-control" name="field_<?= $field['id'] ?>"
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'email': ?>
-                                                <input type="email" class="form-control" name="field_<?= $field['id'] ?>"
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'date': ?>
-                                                <input type="date" class="form-control" name="field_<?= $field['id'] ?>"
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'file': ?>
-                                                <input type="file" class="form-control" name="field_<?= $field['id'] ?>"
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'textarea': ?>
-                                                <textarea class="form-control" name="field_<?= $field['id'] ?>" rows="3"
-                                                    <?= $field['required'] ? 'required' : '' ?>></textarea>
-                                            <?php break; ?>
-                                            
-                                            <?php case 'select': ?>
-                                                <select class="form-control" name="field_<?= $field['id'] ?>"
-                                                    <?= $field['required'] ? 'required' : '' ?>>
-                                                    <option value="">Choose...</option>
-                                                </select>
-                                            <?php break; ?>
-                                        <?php endswitch; ?>
-                                    </div>
-                                <?php endforeach; ?>
-
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                            <?php if (empty($form_fields)): ?>
+                                <div class="alert alert-info">
+                                    <i class="fas fa-info-circle"></i> Maaf, form untuk pelayanan ini belum tersedia.
                                 </div>
-                            </form>
+                            <?php else: ?>
+                                <form id="generatedForm" method="POST" enctype="multipart/form-data">
+                                    <?php foreach ($form_fields as $field): ?>
+                                        <div class="form-group">
+                                            <label><?= $field['label'] ?><?= $field['required'] ? ' <span class="text-danger">*</span>' : '' ?></label>
+                                            
+                                            <?php switch($field['field_type']): 
+                                                case 'text': ?>
+                                                    <input type="text" class="form-control" name="field_<?= $field['id'] ?>" 
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'number': ?>
+                                                    <input type="number" class="form-control" name="field_<?= $field['id'] ?>"
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'email': ?>
+                                                    <input type="email" class="form-control" name="field_<?= $field['id'] ?>"
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'date': ?>
+                                                    <input type="date" class="form-control" name="field_<?= $field['id'] ?>"
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'file': ?>
+                                                    <input type="file" class="form-control" name="field_<?= $field['id'] ?>"
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'textarea': ?>
+                                                    <textarea class="form-control" name="field_<?= $field['id'] ?>" rows="3"
+                                                        <?= $field['required'] ? 'required' : '' ?>></textarea>
+                                                <?php break; ?>
+                                                
+                                                <?php case 'select': ?>
+                                                    <select class="form-control" name="field_<?= $field['id'] ?>"
+                                                        <?= $field['required'] ? 'required' : '' ?>>
+                                                        <option value="">Choose...</option>
+                                                    </select>
+                                                <?php break; ?>
+                                            <?php endswitch; ?>
+                                        </div>
+                                    <?php endforeach; ?>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                                    </div>
+                                </form>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -84,9 +90,13 @@ $(document).ready(function() {
         
         let formData = new FormData(this);
         formData.append('id_pelayanan', '<?= $pelayanan['id_pelayanan'] ?>');
+        // Add user_id if available
+        <?php if(session()->get('user_id')): ?>
+        formData.append('user_id', '<?= session()->get('user_id') ?>');
+        <?php endif; ?>
 
         $.ajax({
-            url: '<?= base_url() ?>/admin/tiket/save',
+            url: '<?= base_url() ?>/admin/tiket/save_submission',
             type: 'POST',
             data: formData,
             processData: false,
@@ -116,4 +126,3 @@ $(document).ready(function() {
 });
 </script>
 <?= $this->endSection() ?>
-x`

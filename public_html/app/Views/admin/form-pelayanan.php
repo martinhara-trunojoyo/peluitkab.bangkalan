@@ -18,6 +18,9 @@
                         <div class="card-header">
                             <h4>Form Fields</h4>
                             <div class="card-header-action">
+                                <button class="btn btn-success mr-2" onclick="openCreateTableModal()">
+                                    Create Table <i class="fas fa-database"></i>
+                                </button>
                                 <a href="<?= base_url() ?>/admin/tiket/view_form/<?= $pelayanan['id_pelayanan'] ?>" class="btn btn-info mr-2">
                                     View Form <i class="fas fa-eye"></i>
                                 </a>
@@ -96,6 +99,34 @@
     </div>
 </div>
 
+<!-- Create Table Modal -->
+<div class="modal fade" id="createTableModal" tabindex="-1" role="dialog" aria-labelledby="createTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createTableModalLabel">Create Database Table</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Table Name</label>
+                    <input type="text" class="form-control" id="tableName" name="tableName" required 
+                           placeholder="Enter table name (without spaces)">
+                    <small class="form-text text-muted">Table name should only contain letters, numbers, and underscores</small>
+                </div>
+                <div id="migrationStatus" class="alert" style="display: none;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" id="createTableBtn" onclick="validateAndProceed()">Create Table</button>
+                <button type="button" class="btn btn-primary" id="runMigrationBtn" style="display: none;" onclick="runMigration()">Run Migration</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
 $(document).ready(function() {
     loadFormFields();
@@ -104,19 +135,31 @@ $(document).ready(function() {
 function loadFormFields() {
     $.get('<?= base_url() ?>/admin/pelayanan/get_form_fields/<?= $pelayanan['id_pelayanan'] ?>', function(data) {
         let html = '';
-        data.forEach(function(field, index) {
-            html += `
+        if (data.length === 0) {
+            html = `
                 <tr>
-                    <td>${field.label}</td>
-                    <td>${field.field_type}</td>
-                    <td>${field.required == 1 ? 'Yes' : 'No'}</td>
-                    <td>
-                        <button class="btn btn-warning btn-sm" onclick="editField(${field.id}, '${field.label}', '${field.field_type}', '${field.required}')">Edit</button>
-                        <button class="btn btn-danger btn-sm" onclick="deleteField(${field.id})">Delete</button>
+                    <td colspan="4" class="text-center">
+                        <div class="alert alert-light" role="alert">
+                            <i class="fas fa-info-circle"></i> No form fields available. Click "Add New Field" to create one.
+                        </div>
                     </td>
                 </tr>
             `;
-        });
+        } else {
+            data.forEach(function(field, index) {
+                html += `
+                    <tr>
+                        <td>${field.label}</td>
+                        <td>${field.field_type}</td>
+                        <td>${field.required == 1 ? 'Yes' : 'No'}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editField(${field.id}, '${field.label}', '${field.field_type}', '${field.required}')">Edit</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteField(${field.id})">Delete</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
         $('#formFieldsList').html(html);
     });
 }
@@ -198,6 +241,82 @@ function editField(id, label, fieldType, required) {
     $('#type').val(fieldType);
     $('#required').val(required);
     $('#fieldModal').modal('show');
+}
+
+function openCreateTableModal() {
+    $('#tableName').val('');
+    $('#migrationStatus').hide();
+    $('#createTableBtn').show();
+    $('#runMigrationBtn').hide();
+    $('#createTableModal').modal('show');
+}
+
+function validateAndProceed() {
+    const tableName = $('#tableName').val();
+    if (!tableName) {
+        showError('Table name is required');
+        return;
+    }
+    
+    if (!/^[a-zA-Z0-9_]+$/.test(tableName)) {
+        showError('Table name can only contain letters, numbers, and underscores');
+        return;
+    }
+
+    // Get current form fields
+    $.get('<?= base_url() ?>/admin/pelayanan/get_form_fields/<?= $pelayanan['id_pelayanan'] ?>', function(data) {
+        if (data.length === 0) {
+            showError('Please add form fields before creating the table');
+            return;
+        }
+
+        $('#createTableBtn').hide();
+        $('#runMigrationBtn').show();
+        $('#migrationStatus')
+            .removeClass('alert-danger')
+            .addClass('alert-info')
+            .html('Table structure is ready. Click "Run Migration" to create the table.')
+            .show();
+    });
+}
+
+function runMigration() {
+    const tableName = $('#tableName').val();
+    
+    $.ajax({
+        url: '<?= base_url() ?>/admin/pelayanan/create_table',
+        type: 'POST',
+        data: {
+            table_name: tableName,
+            id_pelayanan: '<?= $pelayanan['id_pelayanan'] ?>'
+        },
+        success: function(response) {
+            if (response.status === 200) {
+                $('#migrationStatus')
+                    .removeClass('alert-danger alert-info')
+                    .addClass('alert-success')
+                    .html('Table created successfully!')
+                    .show();
+                    
+                setTimeout(() => {
+                    $('#createTableModal').modal('hide');
+                }, 2000);
+            } else {
+                showError(response.message || 'Failed to create table');
+            }
+        },
+        error: function() {
+            showError('Error creating table');
+        }
+    });
+}
+
+function showError(message) {
+    $('#migrationStatus')
+        .removeClass('alert-success alert-info')
+        .addClass('alert-danger')
+        .html(message)
+        .show();
 }
 </script>
 <?= $this->endSection() ?>
