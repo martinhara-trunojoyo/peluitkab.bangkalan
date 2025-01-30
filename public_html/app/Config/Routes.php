@@ -31,6 +31,12 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+$routes->post('admin/formbuilder/generateMigration', 'Admin\FormBuilder::generateMigration');
+$routes->post('admin/formbuilder/runMigration', 'Admin\FormBuilder::runMigration');
+$routes->post('admin/formbuilder/create_table', 'FormBuilder::createTable');
+$routes->post('admin/pelayanan/create_table', 'FormBuilder::createTable');
+
 $routes->get('/', 'Home::index');
 $routes->get('/qrcode', 'Magang::generate_qrcode');
 
@@ -175,6 +181,7 @@ $routes->group('admin', ['filter' => 'adminAuth'], static function ($routes) {
     $routes->get('get_form_fields/(:num)', 'Admin::get_form_fields/$1');
     $routes->post('save_form_field', 'Admin::save_form_field');
     $routes->delete('delete_form_field/(:num)', 'Admin::delete_form_field/$1');
+    $routes->get('get_pelayanan_with_form', 'Pelayanan::getPelayananWithForm');
   });
 
   // menu peralatan
@@ -227,6 +234,7 @@ $routes->group('admin', ['filter' => 'adminAuth'], static function ($routes) {
   $routes->post('/tiket/save', 'Tiket::save');  // Pastikan route ini ada
   $routes->get('form_builder/get_components/(:any)', 'FormBuilder::getComponents/$1');
   $routes->get('form/(:any)', 'Form::index/$1');
+  $routes->get('admin/formbuilder/get_form_fields/(:num)', 'FormBuilder::getFormFields/$1');
 });
 
 // OPERATOR

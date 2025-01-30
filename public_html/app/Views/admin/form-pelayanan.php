@@ -130,6 +130,7 @@
 <script>
 $(document).ready(function() {
     loadFormFields();
+    loadGeneratedFormFields();
 });
 
 function loadFormFields() {
@@ -177,7 +178,7 @@ function saveField() {
         label: $('#label').val(),
         type: $('#type').val(),
         required: $('#required').val(),
-        sort_order: $('#formFieldsList tr').length + 1
+        sort_order: $('#formFieldsList.tr').length + 1
     };
 
     $.ajax({
@@ -298,6 +299,9 @@ function runMigration() {
                     .html('Table created successfully!')
                     .show();
                     
+                // Add animation for success message
+                $('#migrationStatus').fadeIn().delay(2000).fadeOut();
+
                 setTimeout(() => {
                     $('#createTableModal').modal('hide');
                 }, 2000);
@@ -305,8 +309,12 @@ function runMigration() {
                 showError(response.message || 'Failed to create table');
             }
         },
-        error: function() {
-            showError('Error creating table');
+        error: function(xhr) {
+            let errorMessage = 'Error creating table';
+            if (xhr.responseJSON && xhr.responseJSON.message) {
+                errorMessage = xhr.responseJSON.message;
+            }
+            showError(errorMessage);
         }
     });
 }
@@ -318,5 +326,44 @@ function showError(message) {
         .html(message)
         .show();
 }
+
+function loadGeneratedFormFields() {
+    $.get('<?= base_url() ?>/admin/formbuilder/get_form_fields/<?= $pelayanan['id_pelayanan'] ?>', function(response) {
+        if (response.status === 'success') {
+            let formFieldsHtml = '';
+            response.formFields.forEach(function(field) {
+                formFieldsHtml += `
+                    <div class="form-group">
+                        <label>${field.label}</label>
+                        ${getFieldHtml(field)}
+                    </div>
+                `;
+            });
+            $('#generatedFormFields').html(formFieldsHtml);
+        } else {
+            $('#generatedFormFields').html('<div class="alert alert-danger">Failed to load form fields.</div>');
+        }
+    });
+}
+
+function getFieldHtml(field) {
+    switch (field.field_type) {
+        case 'text':
+        case 'email':
+        case 'number':
+        case 'date':
+            return `<input type="${field.field_type}" class="form-control" name="${field.label}" ${field.required == 1 ? 'required' : ''}>`;
+        case 'textarea':
+            return `<textarea class="form-control" name="${field.label}" ${field.required == 1 ? 'required' : ''}></textarea>`;
+        case 'select':
+            return `<select class="form-control" name="${field.label}" ${field.required == 1 ? 'required' : ''}></select>`;
+        case 'file':
+            return `<input type="file" class="form-control" name="${field.label}" ${field.required == 1 ? 'required' : ''}>`;
+        default:
+            return `<input type="text" class="form-control" name="${field.label}" ${field.required == 1 ? 'required' : ''}>`;
+    }
+}
 </script>
+<script src="<?= base_url('assets/js/form_builder.js') ?>"></script>
+
 <?= $this->endSection() ?>

@@ -5,13 +5,11 @@
     <section class="section">
         <div class="section-header">
             <h1>Halaman Tiket</h1>
-            <div class="section-header-breadcrumb">
-                <div class="breadcrumb-item active"><a
-                        href="<?= base_url() ?>/<?= session()->get('role') ?>/dashboard">Dashboard</a></div>
-                <div class="breadcrumb-item"><a href="<?= base_url() ?>/<?= session()->get('role') ?>/tiket">Tiket</a>
-                </div>
-                <div class="breadcrumb-item">Daftar Tiket</div>
+            <div class="breadcrumb-item active"><a
+                    href="<?= base_url() ?>/<?= session()->get('role') ?>/dashboard">Dashboard</a></div>
+            <div class="breadcrumb-item"><a href="<?= base_url() ?>/<?= session()->get('role') ?>/tiket">Tiket</a>
             </div>
+            <div class="breadcrumb-item">Daftar Tiket</div>
         </div>
         <div class="section-body">
             <div class="row">
@@ -111,10 +109,11 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label>Pilih Pelayanan</label>
-                    <select style="width:100%;" class="select2 form-control" id="myPelayanan">
+                    <select style="width:100%;" class="select2 form-control" id="myPelayanan" onchange="loadGeneratedFormFields()">
 
                     </select>
                 </div>
+                <div id="generatedFormFields"></div>
             </div>
             <div class="modal-footer bg-whitesmoke br">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
@@ -144,22 +143,20 @@ function open_modal() {
 }
 
 function open_form() {
-    window.open("<?= base_url() ?>/form/" + $("#myPelayanan").val(), "_self");
+    const pelayananId = $("#myPelayanan").val();
+    window.open("<?= base_url() ?>/form/" + pelayananId, "_self");
 }
 
 function get_pelayanan() {
     $.ajax({
-        url: "<?= base_url() ?>/<?= session()->get('role') ?>/pelayanan/get_pelayanan",
+        url: "<?= base_url() ?>/<?= session()->get('role') ?>/pelayanan/get_pelayanan_with_form",
         type: "GET",
         dataType: "JSON",
         async: false,
         success: function(data) {
             var baris = "";
             for ($x = 0; $x < data.length; $x++) {
-                if (data[$x].id_pelayanan != 13) {
-                    baris += '<option value="' + data[$x].route + '">' + data[$x].nama_pelayanan +
-                        '</option>';
-                }
+                baris += '<option value="' + data[$x].id_pelayanan + '">' + data[$x].nama_pelayanan + '</option>';
             }
             document.getElementById("myPelayanan").innerHTML = baris;
             $.fn.modal.Constructor.prototype.enforceFocus = function() {};
@@ -330,6 +327,45 @@ function get_data() {
         ]
     });
     new $.fn.dataTable.FixedHeader(table);
+}
+
+function loadGeneratedFormFields() {
+    const pelayananId = $("#myPelayanan").val();
+    $.get('<?= base_url() ?>/admin/formbuilder/get_form_fields/' + pelayananId, function(response) {
+        if (response.status === 'success') {
+            let formFieldsHtml = '<form id="generatedForm">';
+            response.formFields.forEach(function(field) {
+                formFieldsHtml += `
+                    <div class="form-group">
+                        <label>${field.label}</label>
+                        ${getFieldHtml(field)}
+                    </div>
+                `;
+            });
+            formFieldsHtml += '</form>';
+            $('#generatedFormFields').html(formFieldsHtml);
+        } else {
+            $('#generatedFormFields').html('<div class="alert alert-danger">Failed to load form fields.</div>');
+        }
+    });
+}
+
+function getFieldHtml(field) {
+    switch (field.field_type) {
+        case 'text':
+        case 'email':
+        case 'number':
+        case 'date':
+            return `<input type="${field.field_type}" class="form-control" name="field_${field.id}" ${field.required == 1 ? 'required' : ''}>`;
+        case 'textarea':
+            return `<textarea class="form-control" name="field_${field.id}" ${field.required == 1 ? 'required' : ''}></textarea>`;
+        case 'select':
+            return `<select class="form-control" name="field_${field.id}" ${field.required == 1 ? 'required' : ''}></select>`;
+        case 'file':
+            return `<input type="file" class="form-control" name="field_${field.id}" ${field.required == 1 ? 'required' : ''}>`;
+        default:
+            return `<input type="text" class="form-control" name="field_${field.id}" ${field.required == 1 ? 'required' : ''}>`;
+    }
 }
 </script>
 <?= $this->endSection() ?>

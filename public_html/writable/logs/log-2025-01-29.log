@@ -1,0 +1,60 @@
+ERROR - 2025-01-29 03:55:29 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;pelayanan&quot; does not exist
+LINE 2: FROM &quot;pelayanan&quot;
+             ^ in C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "pelayan...')
+#2 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pelayan...')
+#3 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pelayan...')
+#4 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "pelayan...', Array, false)
+#5 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\app\Controllers\Pelayanan.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(824): App\Controllers\Pelayanan->getPelayananWithForm()
+#7 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#8 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-29 03:55:41 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;pelayanan&quot; does not exist
+LINE 2: FROM &quot;pelayanan&quot;
+             ^ in C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "pelayan...')
+#2 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pelayan...')
+#3 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pelayan...')
+#4 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "pelayan...', Array, false)
+#5 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\app\Controllers\Pelayanan.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(824): App\Controllers\Pelayanan->getPelayananWithForm()
+#7 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#8 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-29 03:58:45 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;pelayanan&quot; does not exist
+LINE 2: FROM &quot;pelayanan&quot;
+             ^ in C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "pelayan...')
+#2 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pelayan...')
+#3 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pelayan...')
+#4 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "pelayan...', Array, false)
+#5 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\app\Controllers\Pelayanan.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(824): App\Controllers\Pelayanan->getPelayananWithForm()
+#7 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#8 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-01-29 03:59:04 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;pelayanan&quot; does not exist
+LINE 2: FROM &quot;pelayanan&quot;
+             ^ in C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php:136
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp5\\htdoc...', 136, Array)
+#1 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\Postgre\Connection.php(136): pg_query(Resource id #125, 'SELECT "pelayan...')
+#2 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(670): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pelayan...')
+#3 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pelayan...')
+#4 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT "pelayan...', Array, false)
+#5 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\app\Controllers\Pelayanan.php(23): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(824): App\Controllers\Pelayanan->getPelayananWithForm()
+#7 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pelayanan))
+#8 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp5\htdocs\peluitgithub\peluitkab.bangkalan\public_html\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
